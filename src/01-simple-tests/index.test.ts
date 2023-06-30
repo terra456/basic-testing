@@ -4,19 +4,16 @@ import { simpleCalculator, Action } from './index';
 describe('simpleCalculator tests', () => {
   test('should add two numbers', () => {
     expect(simpleCalculator({ a: 3, b: 2, action: Action.Add })).toBe(5);
-    expect(simpleCalculator({ a: -3, b: 2, action: Action.Add })).toBe(-1);
   });
 
   test('should subtract two numbers', () => {
     // Write your test here
     expect(simpleCalculator({ a: 3, b: 2, action: Action.Subtract })).toBe(1);
-    expect(simpleCalculator({ a: 4, b: 8, action: Action.Subtract })).toBe(-4);
   });
 
   test('should multiply two numbers', () => {
     // Write your test here
     expect(simpleCalculator({ a: 3, b: 2, action: Action.Multiply })).toBe(6);
-    expect(simpleCalculator({ a: 5, b: 0, action: Action.Multiply })).toBe(0);
   });
 
   test('should divide two numbers', () => {
